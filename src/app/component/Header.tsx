@@ -29,8 +29,8 @@ export default function Header() {
           <Lock size={16} />
           Connexion
         </Link>
-        <Link href="/register" className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-          S'inscrire
+        <Link href="/register" className=" shadow-md animate-pulse hover:bg-yellow-600  bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+          {"S'inscrire"}
         </Link>
       </div>
 
@@ -56,7 +56,7 @@ export default function Header() {
             Connexion
           </Link>
           <Link href="/register" className="bg-blue-600 text-white px-3 py-2 rounded text-center" onClick={() => setIsOpen(false)}>
-            S'inscrire
+           { "S'inscrire"}
           </Link>
         </div>
       )}
