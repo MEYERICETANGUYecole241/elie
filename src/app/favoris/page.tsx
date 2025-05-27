@@ -1,5 +1,11 @@
 export default function FavorisPage() {
-  const favoris: any[] = []; // Remplace par de vraies données plus tard
+  type Logement = {
+    id: number;
+    titre: string;
+    imageUrl: string;
+  };
+
+  const favoris: Logement[] = [];
 
   return (
     <main className="p-6">
@@ -10,7 +16,7 @@ export default function FavorisPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {favoris.map((fav, index) => (
             <div key={index} className="border rounded p-4">
-              <h2 className="text-lg font-semibold">Nom du logement</h2>
+              <h2 className="text-lg font-semibold">{fav.titre}</h2>
               <p>Ville – Prix FCFA</p>
               <button className="text-red-500 mt-2">Retirer</button>
             </div>
